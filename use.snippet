@@ -1,0 +1,10 @@
+	// 调用Node.js服务
+	/**
+	 * ${0:服务返回值}
+	 */
+	const r$CURRENT_SECONDS_UNIX = await(() => {
+		interface IData {$3}
+		const service_name = $1;	// 服务名称
+		const msg = $2;	// 参数
+		return awx3<IData>(service_name, msg);
+	})();
