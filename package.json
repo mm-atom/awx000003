@@ -38,8 +38,11 @@
 	],
 	"license": "MIT",
 	"dependencies": {},
+	"peerDependencies": {
+		"@mmstudio/global": "*"
+	},
 	"devDependencies": {
-		"@mmstudio/global": "^1.0.202003191018",
+		"@mmstudio/global": "latest",
 		"@types/weixin-app": "latest",
 		"@typescript-eslint/eslint-plugin": "latest",
 		"@typescript-eslint/parser": "latest",
