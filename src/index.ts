@@ -6,7 +6,7 @@ import global from '@mmstudio/global';
  * @param msg 参数
  */
 export default async function nodejs<T extends object>(service_name: string, msg: unknown) {
-	const url = `${global('host', 'http://127.0.0.1:8889')}/sendmessage`;
+	const url = `${global('host', 'http://127.0.0.1:8889')}/sendmessage/${encodeURIComponent(service_name)}`;
 	const data = JSON.stringify({
 		msg,
 		type: service_name
